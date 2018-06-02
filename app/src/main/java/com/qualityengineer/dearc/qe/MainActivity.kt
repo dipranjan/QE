@@ -1,11 +1,14 @@
 package com.qualityengineer.dearc.qe
 
+import android.content.Intent
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
-import android.content.Intent
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +25,15 @@ class MainActivity : AppCompatActivity() {
                 }
             setContentView(R.layout.activity_main)
             setSupportActionBar(findViewById(R.id.my_toolbar))
+            supportActionBar?.setDisplayShowTitleEnabled(false)
+
+            val uri = Uri.parse(intent.getStringExtra("uri"))
+            Picasso.with(applicationContext)
+                    .load(uri)
+                    .transform(PicassoCircleTransformation())
+                    .resize(100, 100)
+                    .centerCrop()
+                    .into(findViewById<ImageView>(R.id.profilepic))
 
 
 

@@ -122,7 +122,9 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
     private void launchHomeScreen() {
         //Globals.saveFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+        intent.putExtra("uri", mFirebaseUser.getPhotoUrl().toString());
+        startActivity(intent);
         finish();
     }
 
@@ -270,13 +272,13 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success");
                     FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                    Toast.makeText(getApplicationContext(),"Welcome to QE.",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"Welcome to QE.",Toast.LENGTH_LONG).show();
                     launchHomeScreen();
                     //updateUI(user);
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.getException());
-                    Toast.makeText(getApplicationContext(),"Sign in Failure.",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"Sign in Failure.",Toast.LENGTH_LONG).show();
                     //Snackbar.make(findViewById(R.id.main_layout), "Authentication Failed.", Snackbar.LENGTH_SHORT).show();
                     //updateUI(null);
                 }
