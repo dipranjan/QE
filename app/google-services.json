@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "338614347459",
+    "firebase_url": "https://qualityengineer-dearc.firebaseio.com",
+    "project_id": "qualityengineer-dearc",
+    "storage_bucket": "qualityengineer-dearc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338614347459:android:6f0614a092a5ac88",
+        "android_client_info": {
+          "package_name": "com.qualityengineer.dearc.qe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338614347459-gjd6a8fusen2ipm06n0i7jv4kjfphp5f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338614347459-h56lcs8se8u47lu4n0j0his57mksn97u.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338614347459-gjd6a8fusen2ipm06n0i7jv4kjfphp5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjbSAG8fg0dFXkbTU3rKIQX-AK9VsR_0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

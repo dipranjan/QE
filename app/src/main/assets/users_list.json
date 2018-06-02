@@ -1,0 +1,7 @@
+{
+  "content": [
+    { "name":"JAVA", "items":[ "JAVA1", "JAVA2", "JAVA3" ] },
+    { "name":"MAVEN", "items":[ "Maven1", "Maven2", "Maven3" ] },
+    { "name":"UFT", "items":[ "UFT1", "UFT2" ] }
+  ]
+}

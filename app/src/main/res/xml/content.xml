@@ -1,0 +1,10 @@
+<?xml version = "1.0"?>
+<Resource>
+    <topic name= "JAVA">
+        <content>Why JAVA?</content>
+        <content>Data Types</content>
+    </topic>
+    <topic name= "Maven">
+        <content>jj</content>
+    </topic>
+</Resource>

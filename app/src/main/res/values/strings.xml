@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QE</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="got_it">LOGIN</string>
+    <string name="welcome">test string</string>
+</resources>
